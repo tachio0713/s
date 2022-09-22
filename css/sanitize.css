@@ -1,0 +1,124 @@
+/* Document
+ * ========================================================================== */
+
+/**
+ * Add border box sizing in all browsers (opinionated).
+ */
+
+ *,
+ ::before,
+ ::after {
+   box-sizing: border-box;
+ }
+ 
+ /**
+  * 1. Add text decoration inheritance in all browsers (opinionated).
+  * 2. Add vertical alignment inheritance in all browsers (opinionated).
+  */
+ 
+ ::before,
+ ::after {
+   text-decoration: inherit; /* 1 */
+   vertical-align: inherit; /* 2 */
+ }
+ 
+ /**
+  * 1. Use the default cursor in all browsers (opinionated).
+  * 2. Change the line height in all browsers (opinionated).
+  * 3. Use a 4-space tab width in all browsers (opinionated).
+  * 4. Remove the grey highlight on links in iOS (opinionated).
+  * 5. Prevent adjustments of font size after orientation changes in
+  *    IE on Windows Phone and in iOS.
+  * 6. Breaks words to prevent overflow in all browsers (opinionated).
+  */
+ 
+ html {
+   cursor: default; /* 1 */
+   line-height: 1.5; /* 2 */
+   -moz-tab-size: 4; /* 3 */
+   tab-size: 4; /* 3 */
+   -webkit-tap-highlight-color: transparent /* 4 */;
+   -ms-text-size-adjust: 100%; /* 5 */
+   -webkit-text-size-adjust: 100%; /* 5 */
+   word-break: break-word; /* 6 */
+ }
+ 
+ /* Sections
+  * ========================================================================== */
+ 
+ /**
+  * Remove the margin in all browsers (opinionated).
+  */
+ 
+ body {
+   margin: 0;
+ }
+ 
+ /**
+  * Correct the font size and margin on `h1` elements within `section` and
+  * `article` contexts in Chrome, Edge, Firefox, and Safari.
+  */
+ 
+ h1 {
+   font-size: 2em;
+   margin: 0.67em 0;
+ }
+ 
+ /* Grouping content
+  * ========================================================================== */
+ 
+ /**
+  * Remove the margin on nested lists in Chrome, Edge, IE, and Safari.
+  */
+ 
+ dl dl,
+ dl ol,
+ dl ul,
+ ol dl,
+ ul dl {
+   margin: 0;
+ }
+ 
+ /**
+  * Remove the margin on nested lists in Edge 18- and IE.
+  */
+ 
+ ol ol,
+ ol ul,
+ ul ol,
+ ul ul {
+   margin: 0;
+ }
+ 
+ /**
+  * 1. Add the correct sizing in Firefox.
+  * 2. Show the overflow in Edge 18- and IE.
+  */
+ 
+ hr {
+   height: 0; /* 1 */
+   overflow: visible; /* 2 */
+ }
+ 
+ /**
+  * Add the correct display in IE.
+  */
+ 
+ main {
+   display: block;
+ }
+ 
+ /**
+  * Remove the list style on navigation lists in all browsers (opinionated).
+  */
+ 
+ nav ol,
+ nav ul {
+   list-style: none;
+   padding: 0;
+ }
+ 
+ /**
+  * 1. Correct the inheritance and scaling of font size in all browsers.
+  * 2. Correct the odd `em` font sizing in all browsers.
+  */
