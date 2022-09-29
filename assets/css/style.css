@@ -1,5 +1,7 @@
 @charset "utf-8";
-/* 
+
+
+/*  
 Bese style
 */
 body {
@@ -37,6 +39,18 @@ grid
 .grid-col-4 > .grid-item {
   width: 25%;
 }
+@media screen and (max-width: 768px) {
+  .grid {
+    display: block;
+  }
+  .grid-col-2 > .grid-item,
+  .grid-col-3 > .grid-item,
+  .grid-col-4 > .grid-item {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
 
 /* 
 section
@@ -56,8 +70,20 @@ section
   margin: 0 0 40px;
 }
 .section-button {
-  margin-top: 40px;
+  margin: 40px 0 0;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+      .section {
+        padding: 20px 10px;
+      }
+    .section-headline {
+      font-size: 30px;
+      margin: 0 0 20px;
+    }
+    .section-button {
+      margin: 20px 0 0;
+    } 
 }
 
 /* 
@@ -101,6 +127,12 @@ header
 .header-navitem > a:hover {
   border-bottom: 2px solid #333;
 } 
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 12px;
+  }
+}
+
 
  
 /* 
@@ -138,6 +170,11 @@ hero
   widows: 100%;
   height: 100%;
 }
+@media screen and (max-width: 768px){
+    .hero > strong {
+        font-size: 50px;
+    }
+}
 
 /* 
 about 
@@ -155,6 +192,21 @@ about
   font-size: 30px;
 }
 /* .about-description {} */
+@media screen and (max-width: 768px) {
+  .about {
+    display: block;
+  }
+  .about-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .about-headline {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+
 
 /* 
 feature 
@@ -282,6 +334,14 @@ button
   min-width: 500px;
   min-height: 100px;
 }
+@media screen and (max-width: 768px) {
+  .select,
+  .input,
+  .textarea {
+    min-width: auto;
+    width: 100%;
+  }
+}
 
 /* 
 form 
@@ -302,6 +362,15 @@ form
   margin-top: 20px;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .form-table,
+  .form-table tbody,
+  .form-table tr,
+  .form-table th,
+  .form-table td {
+    display: block;
+  }
+}
 /* 
 works 
 */
@@ -312,6 +381,16 @@ works
 }
 .works > img {
   margin: 0  15px;
+}
+@media screen and (max-width: 768px) {
+  .works {
+    margin: 20px 0;
+    padding: 10px;
+  }
+  .works > img {
+    width: 110px;
+    margin: 5px;
+  }
 }
 
 /* 
@@ -356,4 +435,18 @@ footer
   display: block;
   text-align: center;
   padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .footer-map {
+    padding: 15px;
+    display: block;
+  }
+  .footer-map > iframe {
+    width: 100%;
+    height: 200px;
+  }
+  .footer-mapinfo {
+    width: 100%;
+    text-align: center;
+  }
 }
